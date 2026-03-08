@@ -1,0 +1,19 @@
+{
+  "name": "cheetsheet",
+  "author": "LifeofMichal",
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "repository containing example implementations of various operations and functionalities to go back to if you(I) forget",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.x",
+    "vitest": "^4.0.18"
+  }
+}
