@@ -1,32 +1,5 @@
 import { middlePivot, type PivotFinder } from "./pivotFinder.ts";
 import { ascending } from "../comparators/numeric.ts";
-import {
-  ascendingInvalidLast,
-  descendingInvalidLast,
-} from "../comparators/numericInvalidLast.ts";
-
-const RANDOM_NUMBER_LIST_OF_LENGTH_10: unknown[] = [
-  1,
-  "shazam",
-  5,
-  2,
-  undefined,
-  7.3,
-  7,
-  3.1,
-  8,
-  [],
-  null,
-  6,
-  3,
-  -20,
-  0,
-  40,
-  4,
-  9,
-  { foo: 1, bar: 2 },
-  [4, 5, 6, 4],
-];
 
 export function quicksort<T>(
   array: T[],
@@ -61,14 +34,3 @@ export function quicksort<T>(
   quicksort(array, left, i - 1, comparator, pivotFinder);
   quicksort(array, i + 1, right, comparator, pivotFinder);
 }
-
-quicksort(
-  RANDOM_NUMBER_LIST_OF_LENGTH_10,
-  0,
-  RANDOM_NUMBER_LIST_OF_LENGTH_10.length - 1,
-  descendingInvalidLast,
-);
-
-console.log({
-  sortedList: RANDOM_NUMBER_LIST_OF_LENGTH_10,
-});
