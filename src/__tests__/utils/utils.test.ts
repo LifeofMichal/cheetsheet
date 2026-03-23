@@ -1,5 +1,5 @@
 import { describe, it, expect, expectTypeOf } from "vitest";
-import { isValidNumber } from "../../comparators/utils";
+import { isValidNumber } from "../../utils/isValidNumber";
 
 describe("isValidNumber", () => {
   const VALID_NUMBERS = [-Infinity, -1337, -420, -0, 0, 13, 42, 54, Infinity];
