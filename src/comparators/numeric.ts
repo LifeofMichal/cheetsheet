@@ -1,4 +1,4 @@
-import { isValidNumber } from "./utils";
+import { isValidNumber } from "../utils/isValidNumber";
 
 // comparator returns
 // positive - a is greater than b; a AFTER b

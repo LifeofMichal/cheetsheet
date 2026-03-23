@@ -1,4 +1,4 @@
-import { isValidNumber } from "./utils";
+import { isValidNumber } from "../utils/isValidNumber";
 
 // sorts numbers in descending order with invalid values at the end
 export function descendingInvalidLast(a: unknown, b: unknown): number {
